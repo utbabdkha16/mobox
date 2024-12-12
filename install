@@ -43,25 +43,6 @@ if [ -e $PREFIX/glibc ]; then
     fi
 fi
 
-INSTALL_WOW64=0
-
-echo "Select an option"
-echo "1) Install previous mobox with box86"
-echo "2) Install new mobox wow64 version"
-echo ""
-echo -n "Selected number: "
-read i
-case "$i" in
-1)
-    INSTALL_WOW64=0
-;;
-2)
-    INSTALL_WOW64=1
-;;
-*)
-    return 1
-;;
-esac
 
 echo "Installing mobox"
 
